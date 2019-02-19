@@ -124,7 +124,7 @@ void CVirtualClientView::OnInitialUpdate()
 	int nPort = 7000;
 
 	ZeroMemory(&caddr,sizeof(SOCKADDR_IN));
-	caddr.sin_addr.S_un.S_addr = inet_addr("127.0.0.1");
+	caddr.sin_addr.S_un.S_addr = inet_addr("192.168.0.100");
 	caddr.sin_family = AF_INET;
 	caddr.sin_port = htons(nPort);
 
